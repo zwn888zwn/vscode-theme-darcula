@@ -24,6 +24,22 @@
     "activityBar.background": "#ffffff1a",
     "activityBarBadge.background": "#007acc"
   },
+  "semanticTokenColors": {
+    "type:go": "#7A9EC2",
+    "class:go": "#7A9EC2",
+    "interface:go": "#7A9EC2",
+    "struct:go": "#7A9EC2",
+    "function:go": "#FFC66D",
+    "method:go": "#FFC66D",
+    "property:go": "#9E7BB0",
+    "variable:go": "#CCCCCC",
+    "parameter:go": "#CCCCCC",
+    "namespace:go": "#A5C261",
+    "variable.readonly:go": {
+      "foreground": "#9E7BB0",
+      "fontStyle": "italic"
+    }
+  },
   "tokenColors": [
     {
       "name": "Comment",
