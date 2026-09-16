@@ -45,6 +45,19 @@ SNIPPET = (
     "M9.5 5 L8.8 5.7 L11.1 8 L8.8 10.3 L9.5 11 L12.5 8 Z"
 )
 TEXT = "M2 4 H14 V5 H2 Z M2 7.5 H11 V8.5 H2 Z M2 11 H8 V12 H2 Z"
+FILE = "M3 1 H9 L13 5 V15 H3 Z M4 2 V14 H12 V5.5 H8.5 V2 Z M9.5 2.9 V4.5 H11.1 Z"
+CODE_FILE = FILE + (
+    " M6.6 6.5 L4.6 9 L6.6 11.5 L7.3 10.8 L5.9 9 L7.3 7.2 Z"
+    " M9.4 6.5 L8.7 7.2 L10.1 9 L8.7 10.8 L9.4 11.5 L11.4 9 Z"
+)
+TEXT_FILE = FILE + " M5 7 H11 V8 H5 Z M5 9 H11 V10 H5 Z M5 11 H9 V12 H5 Z"
+FILES = "M1 1 H9 V2 H2 V12 H1 Z " + FILE
+SEARCH = (
+    "M12 6.5 A5.5 5.5 0 1 1 1 6.5 A5.5 5.5 0 1 1 12 6.5 Z "
+    "M11 6.5 A4.5 4.5 0 1 0 2 6.5 A4.5 4.5 0 1 0 11 6.5 Z "
+    "M10.7 10 L15.5 14.8 L14.8 15.5 L10 10.7 Z"
+)
+RUN = "M4 1.5 L14 8 L4 14.5 Z M5 3.4 V12.6 L12.2 8 Z"
 # Keep codepoints stable. Multiple VS Code IDs can share a semantic glyph.
 GLYPHS = [
     ("struct", CIRCLE + LETTERS["S"], ["symbol-struct"]),
@@ -63,6 +76,13 @@ GLYPHS = [
     ("keyword", CIRCLE + LETTERS["K"], ["symbol-keyword"]),
     ("snippet", SNIPPET, ["symbol-snippet"]),
     ("text", TEXT, ["symbol-text"]),
+    ("folder", FOLDER, ["folder", "folder-opened", "symbol-folder"]),
+    ("file", FILE, ["file", "symbol-file"]),
+    ("codeFile", CODE_FILE, ["file-code"]),
+    ("textFile", TEXT_FILE, ["file-text"]),
+    ("files", FILES, ["files"]),
+    ("search", SEARCH, ["search"]),
+    ("run", RUN, ["run", "play"]),
 ]
 
 
@@ -81,7 +101,10 @@ def main():
     # from repainting icons. The original outlines remain as a fallback.
     colors = json.loads((ROOT / "themes/darcula.json").read_text())["colors"]
     color_keys = {"type": "typeParameter", "enum": "enumerator",
-                  "enumMember": "enumeratorMember", "package": "module"}
+                  "enumMember": "enumeratorMember", "package": "module",
+                  "folder": "module", "file": "text", "codeFile": "class",
+                  "textFile": "text", "files": "text", "search": "text",
+                  "run": "interface"}
     palette = []
     layers = {}
     for index, (name, _, _) in enumerate(GLYPHS):

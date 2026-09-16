@@ -92,6 +92,50 @@
     "symbol-text": {
       "fontCharacter": "\\e00f",
       "fontId": "darcula-symbols"
+    },
+    "folder": {
+      "fontCharacter": "\\e010",
+      "fontId": "darcula-symbols"
+    },
+    "folder-opened": {
+      "fontCharacter": "\\e010",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-folder": {
+      "fontCharacter": "\\e010",
+      "fontId": "darcula-symbols"
+    },
+    "file": {
+      "fontCharacter": "\\e011",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-file": {
+      "fontCharacter": "\\e011",
+      "fontId": "darcula-symbols"
+    },
+    "file-code": {
+      "fontCharacter": "\\e012",
+      "fontId": "darcula-symbols"
+    },
+    "file-text": {
+      "fontCharacter": "\\e013",
+      "fontId": "darcula-symbols"
+    },
+    "files": {
+      "fontCharacter": "\\e014",
+      "fontId": "darcula-symbols"
+    },
+    "search": {
+      "fontCharacter": "\\e015",
+      "fontId": "darcula-symbols"
+    },
+    "run": {
+      "fontCharacter": "\\e016",
+      "fontId": "darcula-symbols"
+    },
+    "play": {
+      "fontCharacter": "\\e016",
+      "fontId": "darcula-symbols"
     }
   }
 }
