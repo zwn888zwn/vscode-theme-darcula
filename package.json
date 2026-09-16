@@ -2,10 +2,11 @@
     "name": "vscode-theme-darcula",
     "displayName": "Darcula Theme",
     "description": "A theme extension for VS Code based on Darcula theme from Jetbrains IDEs",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "publisher": "rokoroku",
     "scripts": {
-        "publish": "vsce publish"
+        "publish": "vsce publish",
+        "build:icons": "python3 scripts/build-icons.py"
     },
     "repository": {
         "type": "git",
@@ -25,6 +26,20 @@
                 "uiTheme": "vs-dark",
                 "path": "./themes/darcula.json"
             }
-        ]
+        ],
+        "productIconThemes": [
+            {
+                "id": "darcula-product-icons",
+                "label": "Darcula GoLand Icons",
+                "path": "./themes/darcula-product-icon-theme.json"
+            }
+        ],
+        "configurationDefaults": {
+            "editor.suggestFontSize": 13,
+            "editor.suggestLineHeight": 20,
+            "editor.suggest.showIcons": true,
+            "editor.suggest.showStatusBar": false,
+            "editor.snippetSuggestions": "bottom"
+        }
     }
 }

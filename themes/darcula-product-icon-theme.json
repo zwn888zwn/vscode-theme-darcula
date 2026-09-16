@@ -1,0 +1,97 @@
+{
+  "fonts": [
+    {
+      "id": "darcula-symbols",
+      "src": [
+        {
+          "path": "./darcula-symbols.woff",
+          "format": "woff"
+        }
+      ],
+      "weight": "normal",
+      "style": "normal"
+    }
+  ],
+  "iconDefinitions": {
+    "symbol-struct": {
+      "fontCharacter": "\\e000",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-class": {
+      "fontCharacter": "\\e001",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-interface": {
+      "fontCharacter": "\\e002",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-type-parameter": {
+      "fontCharacter": "\\e003",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-function": {
+      "fontCharacter": "\\e004",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-method": {
+      "fontCharacter": "\\e005",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-constructor": {
+      "fontCharacter": "\\e005",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-field": {
+      "fontCharacter": "\\e006",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-variable": {
+      "fontCharacter": "\\e007",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-parameter": {
+      "fontCharacter": "\\e007",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-property": {
+      "fontCharacter": "\\e008",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-constant": {
+      "fontCharacter": "\\e009",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-enum": {
+      "fontCharacter": "\\e00a",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-enum-member": {
+      "fontCharacter": "\\e00b",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-module": {
+      "fontCharacter": "\\e00c",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-namespace": {
+      "fontCharacter": "\\e00c",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-package": {
+      "fontCharacter": "\\e00c",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-keyword": {
+      "fontCharacter": "\\e00d",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-snippet": {
+      "fontCharacter": "\\e00e",
+      "fontId": "darcula-symbols"
+    },
+    "symbol-text": {
+      "fontCharacter": "\\e00f",
+      "fontId": "darcula-symbols"
+    }
+  }
+}
